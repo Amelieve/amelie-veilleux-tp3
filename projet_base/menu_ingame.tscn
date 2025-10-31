@@ -53,7 +53,6 @@ theme_override_colors/font_hover_color = Color(0.615686, 0.745098, 1, 1)
 theme_override_colors/font_color = Color(0.4, 0.588235, 1, 1)
 theme_override_colors/font_pressed_color = Color(0.282353, 0.505882, 1, 1)
 toggle_mode = true
-action_mode = 0
 text = "Continue"
 flat = true
 
