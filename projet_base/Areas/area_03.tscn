@@ -1,10 +1,17 @@
-[gd_scene load_steps=5 format=3 uid="uid://m0k4lp5fmqxr"]
+[gd_scene load_steps=6 format=3 uid="uid://m0k4lp5fmqxr"]
 
-[ext_resource type="PackedScene" uid="uid://cd62qni4x7abq" path="res://area.tscn" id="1_671hq"]
+[ext_resource type="PackedScene" uid="uid://cd62qni4x7abq" path="res://Areas/area_01.tscn" id="1_671hq"]
 [ext_resource type="PackedScene" uid="uid://d2mjiqu15j4jy" path="res://MovingPlatformLarge.tscn" id="2_2fckr"]
 [ext_resource type="PackedScene" uid="uid://chpiieihdfo1j" path="res://MovingPlatformSideway.tscn" id="3_s2v6k"]
 
 [sub_resource type="Curve2D" id="Curve2D_k4ko3"]
+resource_local_to_scene = true
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -63)
+}
+point_count = 2
+
+[sub_resource type="Curve2D" id="Curve2D_2fckr"]
 resource_local_to_scene = true
 _data = {
 "points": PackedVector2Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -63)
@@ -23,11 +30,11 @@ layer_1/tile_data = PackedInt32Array(262158, 65536, 5, 196622, 65536, 5, 131086,
 position = Vector2(1246, -61)
 curve = SubResource("Curve2D_k4ko3")
 
-[node name="MovingPlatformLarge" parent="." index="4"]
-position = Vector2(935, 14)
-curve = SubResource("Curve2D_k4ko3")
+[node name="MovingPlatformLarge" parent="MovingPlatformLarge2" index="2" instance=ExtResource("2_2fckr")]
+position = Vector2(-311, 65)
+curve = SubResource("Curve2D_2fckr")
 
-[node name="player" parent="." index="8"]
+[node name="player" parent="." index="7"]
 position = Vector2(857, 16)
 
 [node name="Coin" parent="Coins" index="0"]
@@ -37,10 +44,13 @@ position = Vector2(934, -85)
 position = Vector2(1161, -70)
 
 [node name="Coin3" parent="Coins" index="2"]
-position = Vector2(1054, -14)
+position = Vector2(871, 10)
 
-[node name="Path2D2" parent="." index="12" instance=ExtResource("3_s2v6k")]
+[node name="Coin4" parent="Coins" index="3"]
+position = Vector2(1377, -134)
+
+[node name="Path2D2" parent="." index="11" instance=ExtResource("3_s2v6k")]
 position = Vector2(1277, -124)
 
-[node name="Path2D" parent="." index="13" instance=ExtResource("3_s2v6k")]
+[node name="Path2D" parent="." index="12" instance=ExtResource("3_s2v6k")]
 position = Vector2(1066, -60)

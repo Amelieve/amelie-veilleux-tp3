@@ -1,7 +1,8 @@
 extends Node
 
 var current_area = 1
-var area_path = "res://"
+var area_path = "res://Areas/"
+var max_area = 4 
 
 var coin = 0
 
@@ -10,9 +11,17 @@ func _ready():
 
 func next_level():
 	current_area += 1
-	var full_path = "area_" + str(current_area) + ".tscn"
-	get_tree().change_scene_to_file("res://area_test.tscn")
-	print("le joueur est dans area")
+
+	# Empêcher de dépasser le dernier niveau
+	if current_area > max_area:
+		print("🎉 Jeu terminé ! Retour au menu.")
+		get_tree().change_scene_to_file("res://Areas/main_menu.tscn")
+		return
+
+	var full_path = area_path + "area_" + str(current_area).pad_zeros(2) + ".tscn"
+	print("Chargement de :", full_path)
+
+	get_tree().change_scene_to_file(full_path)
 	set_up_area()
 
 func set_up_area():

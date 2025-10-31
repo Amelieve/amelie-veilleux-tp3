@@ -396,4 +396,3 @@ volume_db = 0.405
 autoplay = true
 
 [node name="CanvasLayer" parent="." instance=ExtResource("8_76lbm")]
-visible = false

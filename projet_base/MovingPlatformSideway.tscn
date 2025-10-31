@@ -1,5 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://chpiieihdfo1j"]
+[gd_scene load_steps=5 format=3 uid="uid://chpiieihdfo1j"]
 
+[ext_resource type="Script" uid="uid://c5el3c22a56qs" path="res://media/scripts/moving_platform_sideway.gd" id="1_343rc"]
 [ext_resource type="Texture2D" uid="uid://pdaopou07v4g" path="res://media/assets/platform1_large.png" id="1_serpj"]
 
 [sub_resource type="Curve2D" id="Curve2D_343rc"]
@@ -11,8 +12,10 @@ point_count = 2
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_t87pg"]
 size = Vector2(34, 4.5)
 
-[node name="Path2D" type="Path2D"]
+[node name="MovingPlatformSideway" type="Path2D" node_paths=PackedStringArray("path_follow_2D")]
 curve = SubResource("Curve2D_343rc")
+script = ExtResource("1_343rc")
+path_follow_2D = NodePath("PathFollow2D")
 
 [node name="PathFollow2D" type="PathFollow2D" parent="."]
 position = Vector2(3, -1)

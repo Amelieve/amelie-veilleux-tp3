@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://t416gjxtw7j2"]
 
-[ext_resource type="PackedScene" uid="uid://cd62qni4x7abq" path="res://area.tscn" id="1_yyccm"]
+[ext_resource type="PackedScene" uid="uid://cd62qni4x7abq" path="res://Areas/area_01.tscn" id="1_yyccm"]
 
 [node name="AreaTemplate" instance=ExtResource("1_yyccm")]
 
@@ -28,6 +28,3 @@ position = Vector2(1208, -102)
 
 [node name="Coin4" parent="Coins" index="3"]
 position = Vector2(869, -6)
-
-[node name="CanvasLayer" parent="." index="9"]
-visible = false

@@ -1,8 +1,8 @@
 [gd_scene load_steps=12 format=3 uid="uid://cf5b0nnqldmkd"]
 
-[ext_resource type="Script" uid="uid://ia07yap7fgux" path="res://media/scripts/main_menu.gd" id="1_06t4h"]
-[ext_resource type="Texture2D" uid="uid://cxdulhq4kb15h" path="res://media/assets/fond_menu.jpg" id="2_fu7sn"]
-[ext_resource type="AudioStream" uid="uid://cyxkyo0ovl1s3" path="res://media/son/menu.mp3" id="3_fu7sn"]
+[ext_resource type="Script" uid="uid://ia07yap7fgux" path="res://media/scripts/main_menu.gd" id="1_d88vq"]
+[ext_resource type="Texture2D" uid="uid://cxdulhq4kb15h" path="res://media/assets/fond_menu.jpg" id="2_ey2yx"]
+[ext_resource type="AudioStream" uid="uid://cyxkyo0ovl1s3" path="res://media/son/menu.mp3" id="3_wwjr6"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fu7sn"]
 bg_color = Color(1, 1, 1, 1)
@@ -67,12 +67,12 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_06t4h")
+script = ExtResource("1_d88vq")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(578, 325)
 scale = Vector2(0.953317, 1.02355)
-texture = ExtResource("2_fu7sn")
+texture = ExtResource("2_ey2yx")
 region_enabled = true
 region_rect = Rect2(39.4945, 64, 1221.51, 637.668)
 
@@ -126,7 +126,7 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_rhts7")
 text = "Exit"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("3_fu7sn")
+stream = ExtResource("3_wwjr6")
 volume_db = -1.79
 autoplay = true
 
