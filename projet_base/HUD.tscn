@@ -1,8 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://ducv3i7cfspen"]
+[gd_scene load_steps=3 format=3 uid="uid://ducv3i7cfspen"]
 
+[ext_resource type="Script" uid="uid://cwxkinajbadn5" path="res://hud.gd" id="1_efote"]
 [ext_resource type="Texture2D" uid="uid://b3ovd7x0muvts" path="res://media/assets/coin_icon.png" id="1_k5de2"]
 
 [node name="CanvasLayer" type="CanvasLayer"]
+script = ExtResource("1_efote")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 anchors_preset = 5
@@ -13,6 +15,7 @@ offset_right = 20.0
 offset_bottom = 40.0
 grow_horizontal = 2
 scale = Vector2(1.51483, 1.08098)
+color = Color(0.358736, 0.665366, 0.864855, 1)
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
 layout_direction = 2
@@ -23,11 +26,14 @@ grow_horizontal = 2
 scale = Vector2(1.00142, 2.24)
 alignment = 1
 
-[node name="TextureRect" type="TextureRect" parent="HBoxContainer"]
+[node name="CoinsIcon" type="TextureRect" parent="HBoxContainer"]
+unique_name_in_owner = true
 layout_mode = 2
 texture = ExtResource("1_k5de2")
 expand_mode = 2
 stretch_mode = 4
 
-[node name="Label" type="Label" parent="HBoxContainer"]
+[node name="CoinsLabel" type="Label" parent="HBoxContainer"]
+unique_name_in_owner = true
 layout_mode = 2
+text = "0"

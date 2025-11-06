@@ -52,7 +52,6 @@ offset_bottom = 155.0
 theme_override_colors/font_hover_color = Color(0.615686, 0.745098, 1, 1)
 theme_override_colors/font_color = Color(0.4, 0.588235, 1, 1)
 theme_override_colors/font_pressed_color = Color(0.282353, 0.505882, 1, 1)
-toggle_mode = true
 text = "Continue"
 flat = true
 

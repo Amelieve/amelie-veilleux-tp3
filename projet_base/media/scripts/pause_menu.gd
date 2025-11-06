@@ -17,5 +17,6 @@ func hide_menu():
 func _on_ResumeButton_pressed():
 	hide_menu()
 
-func _on_QuitButton_pressed():
-	get_tree().quit()
+func _on_ContinueButton_pressed():
+	print("Continue button pressed") # ← Test
+	hide_menu()

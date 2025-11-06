@@ -1,5 +1,7 @@
 extends Node
 
+signal coin_collectee(valeur_monnaies)
+
 var current_area = 1
 var area_path = "res://Areas/"
 var max_area = 4 
@@ -32,6 +34,8 @@ func add_coin():
 	if coin >= 4:
 		var portal = get_tree().get_first_node_in_group("area_exits") as AreaExit
 		portal.open()
+	emit_signal("coin_collectee", coin)
 
 func reset_coin():
 	coin = 0
+	emit_signal("coin_collectee", coin)

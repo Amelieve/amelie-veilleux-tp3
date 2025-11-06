@@ -28,6 +28,7 @@ offset_right = 55.0
 color = Color(0.906493, 0.906493, 0.906493, 1)
 
 [node name="Label" type="Label" parent="Message/ColorRect"]
+layout_mode = 0
 offset_left = 1.0
 offset_top = 13.0
 offset_right = 95.0
