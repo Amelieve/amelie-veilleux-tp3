@@ -333,10 +333,6 @@ sources/0 = SubResource("TileSetAtlasSource_k4ko3")
 
 [node name="AreaTemplate" type="Node2D"]
 
-[node name="area_exit" parent="." instance=ExtResource("9_76lbm")]
-position = Vector2(530, -65)
-scale = Vector2(0.499222, 0.458668)
-
 [node name="ciel" type="Sprite2D" parent="."]
 visible = false
 position = Vector2(265, -35)
@@ -344,6 +340,10 @@ scale = Vector2(4.98668, 4.23839)
 texture = ExtResource("1_fy505")
 region_enabled = true
 region_rect = Rect2(277, 472, 192, 120)
+
+[node name="area_exit" parent="." instance=ExtResource("9_76lbm")]
+position = Vector2(530, -65)
+scale = Vector2(0.499222, 0.458668)
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_fy505")
