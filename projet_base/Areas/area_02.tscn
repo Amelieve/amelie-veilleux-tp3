@@ -4,11 +4,11 @@
 
 [node name="AreaTemplate" instance=ExtResource("1_yyccm")]
 
-[node name="area_exit" parent="." index="0"]
-position = Vector2(1343, -114)
-
-[node name="ciel" parent="." index="1"]
+[node name="ciel" parent="." index="0"]
 position = Vector2(1056, -49)
+
+[node name="area_exit" parent="." index="1"]
+position = Vector2(1343, -114)
 
 [node name="TileMap" parent="." index="2"]
 layer_0/tile_data = PackedInt32Array(65591, 262144, 1, 55, 131072, 0, 65590, 65536, 1, 54, 65536, 0, 131128, 131072, 2, 131127, 65536, 2, 131126, 65536, 2, 65592, 131072, 0, 131125, 0, 2, 65589, 0, 1, 53, 0, 0, 131151, 131072, 2, 65615, 131072, 0, 131150, 65536, 2, 65614, 65536, 0, 131149, 65536, 2, 65613, 65536, 0, 131148, 65536, 2, 65612, 262144, 1, 131147, 65536, 2, 65611, 327680, 1, 131146, 65536, 2, 65610, 65536, 0, 131145, 0, 2, 65609, 0, 0, 76, 131072, 0, 75, 0, 0)

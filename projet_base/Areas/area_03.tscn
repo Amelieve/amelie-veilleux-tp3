@@ -20,7 +20,7 @@ point_count = 2
 
 [node name="AreaTemplate" instance=ExtResource("1_671hq")]
 
-[node name="area_exit" parent="." index="0"]
+[node name="area_exit" parent="." index="1"]
 position = Vector2(1470, -210)
 
 [node name="TileMap" parent="." index="2"]

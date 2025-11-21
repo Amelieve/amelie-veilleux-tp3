@@ -3,4 +3,7 @@ extends Area2D
 
 func _on_body_entered(body: Node2D) -> void:
 	if body is PlayerController:
+		var gm = get_node("/root/Gamemanager")
+		gm.reset_coin()
+		gm.current_area = 1
 		get_tree().change_scene_to_file("res://Areas/main_menu.tscn")
